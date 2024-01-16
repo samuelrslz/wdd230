@@ -71,7 +71,6 @@ main h2 {
 }
 
 .card {
-    margin-top: -40px;
     display: grid;
     grid-template-rows: auto auto;
     align-items: center;
