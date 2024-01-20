@@ -10,7 +10,7 @@
 
 body {
     font-family: "Noto Serif";
-    width: 800px;
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ a {
 }
 
 header, main, nav {
-    width: 800px;
+    width: auto;
     margin: 0 auto;
 }
 
