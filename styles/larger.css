@@ -1,10 +1,39 @@
-@media screen and (min-width: 800px) {
-    header {
-        background-color: black;
-        color: rgb(199, 62, 62);
+@media (min-width: 640px) {
+	nav {
+		display: flex;
+	}
+
+    header h1 {
+        font-size: 3em;
     }
 
+    header img {
+        width: 250px;
+            /* */
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: all 1s ease;
+    }
+
+    header img:hover{
+        filter: grayscale(0%);
+        filter: gray;
+        -webkit-filter: grayscale(0%);
+        filter: none;
+        transition: 1s ease;
+        }
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
+    }
+
+    main h2 {
+        grid-column: 1/3;
     }
 }
