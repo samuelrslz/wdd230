@@ -5,13 +5,21 @@
     --tan: #D1B89Aff;
     --cadet-gray: #9FABB3ff;
     --beaver: #917F72ff;
-    --lion: #CB9A63ff;
+    --lion: rgb(172, 114, 47);
   }
 
 body {
     font-family: "Noto Serif";
     width: 800px;
     margin: 0 auto;
+}
+
+h3 {
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 header, main, nav {
