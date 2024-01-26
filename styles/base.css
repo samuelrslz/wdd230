@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Sans+Narrow:wght@700&family=Rubik&display=swap');
 
-:root {
+/* :root {
     --powder-blue: #A2BED6ff;
     --tan: #D1B89Aff;
     --cadet-gray: #9FABB3ff;
     --beaver: #917F72ff;
     --lion: #CB9A63ff;
     --max-width: 1240px;
+  } */
+
+  :root {
+    --max-width: 1240px;
+    --powder-blue: #DDDBCB;
+    --tan: #F5F1E3;
+    --cadet-gray: #FFFFFF;
+    --beaver: #1B9AAA;
+    --lion: #050505;
   }
 
 body {
@@ -127,6 +136,7 @@ main {
 
 main h2 {
     text-align: center;
+    font-size: 3rem;
 }
 
 .card {
@@ -137,8 +147,9 @@ main h2 {
 
 .card h3 {
     text-align: center;
-    background-color: var(--lion);
+    background-color: #333;
     padding: 1em;
+    color: white;
 }
 
 .card p {
