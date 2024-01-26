@@ -25,7 +25,9 @@
         <img class=portrait-image src="images/portrait.jpg" alt="Portrait of Samuel Rios-Lazo">
         <h1>Samuel<br>Rios-Lazo</h1>
     </header>
-    <nav>
+    <!--For hamburger menu-->
+    <button id="menu"></button>
+    <nav class="navigation">
         <a href="#">Home</a>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
@@ -49,12 +51,17 @@
             <h3>Information</h3>
             <p>[WEATHER, NUMBER OF VISITS, AND OTHER THINGS WILL GO HERE</p>
         </section>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13005.547769287768!2d-88.18018347431418!3d13.474319306140913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b2a70bc830dab%3A0x76ac9c406eec5592!2sSan%20Miguel%2C%20El%20Salvador!5e0!3m2!1ses-419!2sus!4v1706219275411!5m2!1ses-419!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy; <span id="copyrightDate">[DATE]</span> | Samuel Rios-Lazo | El Salvador</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamgurger.js"></script>
 </body>
 
 </html>

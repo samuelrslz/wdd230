@@ -14,6 +14,11 @@ body {
     margin: 0 auto;
 }
 
+header h1::first-letter{
+    color: black;
+    font-size: 4rem;
+}
+
 a {
     color: black;
 }
@@ -54,28 +59,57 @@ header h1 {
     white-space: pre;
 }
 
-nav {
-    background-color: var(--lion);
-    border: 3px solid black;
-    max-width: var(--max-width);
+/* For hamburger menu */
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.25rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
-nav a {
-    display: block;
-    background-color: var(--tan);
-    width: 200px;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0.5em;
-    color: black;
-    font-size: 1.2em;
-    text-decoration: none;
+#menu::before {
+	content: "☰";
 }
 
-nav a:hover {
-     background-color: var(--lion);
-    }
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+/* End of stuff for hamburger menu */
 
 main {  
     background-color: var(--beaver);
@@ -83,6 +117,12 @@ main {
     margin: auto;
     max-width: var(--max-width);
     border: 3px solid black;
+}
+
+.map {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 main h2 {
