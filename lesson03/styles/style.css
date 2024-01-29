@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Work+Sans:wght@500&display=swap');
+
+:root {
+    --max-width: 1240px;
+    --color-1: #808080;
+    --color-2: #D8BFAA;
+    --color-3: #EBF5EE;
+    --color-4: #BFD1E5;
+    --color-5: #542344;
+}
+
+body {
+    background-color: var(--color-3);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h2, h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--color-5);
+    margin-left: 1rem;
+}
+
+p {
+    font-family: 'Martel', serif;
+    margin-left: 1rem;
+}
+
+.color-palette div {
+    width: 200px;
+    height: 200px;
+}
+
+.color-palette {
+    display: flex;
+    -ms-flex-align: center;
+}
+
+.color-1 {
+    background-color: var(--color-1);
+    color: white;
+}
+
+.color-2 {
+    background-color: var(--color-2);
+}
+
+.color-3 {
+    background-color: var(--color-3);
+}
+
+.color-4 {
+    background-color: var(--color-4);
+}
+
+.color-5 {
+    background-color: var(--color-5);
+    color: white;
+}
+
+img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
