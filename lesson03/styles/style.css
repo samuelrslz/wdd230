@@ -19,7 +19,11 @@ main {
     background-color: white;
 }
 
-h2, h3 {
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3 {
     font-family: 'Work Sans', sans-serif;
     color: var(--color-5);
     margin-left: 1rem;
@@ -37,7 +41,6 @@ p {
 
 .color-palette {
     display: flex;
-    -ms-flex-align: center;
 }
 
 .color-1 {
