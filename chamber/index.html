@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Rios-Lazo">
+    <meta name="description"
+        content="The home page of the Rexburg Chamber of Commerce. The best way to be updated on activities, events, and different businesses in town.">
+    <title>Rexburg Chamber of Commerce Home Page</title>
+    <meta property="og:title" content="Rexburg Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1706603243964-847a75c9ac0d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://samuelrslz.github.io/wdd230/chamber">
+    <link rel="icon" href="images/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce<br>Rexburg, Idaho</h1>
+        <img class="hero-home" src="images/home/hero-home.webp" alt="Idaho Fields Hero Image">
+        <button>Log in</button>
+        <button>Join</button>
+    </header>
+    <!--For hamburger menu-->
+    <button id="menu" title="Hamburger button"></button>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Page2</a>
+        <a href="#">Page3</a>
+        <a href="#">Page4</a>
+        <a href="#">Page5</a>
+    </nav>
+    <main>
+        <h2 class="home-first-h2">Upcoming Events</h2>
+        <img class="home-first-img" src="images/home/home-1.webp" alt="image1">
+        <section class="home-first-text">
+            <h3>Event name</h3>
+            <p class="home-first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+        </section>
+        <img class="home-second-img" src="images/home/home-1.webp" alt="image1">
+        <section class="home-second-text">
+            <h3>Event name</h3>
+            <p class="home-second-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+        </section>
+        <h2 class="home-second-h2">Latest News</h2>
+        <img class="home-third-img" src="images/home/home-1.webp" alt="image1">
+        <section class="home-third-text">
+            <h3>News name</h3>
+            <p class="home-third-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+        </section>
+        <img class="home-fourth-img" src="images/home/home-1.webp" alt="image1">
+        <section class="home-fourth-text">
+            <h3>News name</h3>
+            <p class="home-fourth-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+        </section>
+        <section id="newsletter">
+            <h2 class="home-third-h2">Newsletter Sign Up</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="business">Business:</label>
+                <input type="text" id="business" name="business"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="weather-section">
+            <h2 class="home-fourth-h2">Weather</h2>
+            <div class="weather">Placeholder for the weather widget.</div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightDate">[DATE]</span> | Samuel Rios-Lazo | El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamgurger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Work+Sans:wght@500&display=swap');
+
+:root {
+    --color-1: #808080;
+    --color-2: #D8BFAA;
+    --color-3: #EBF5EE;
+    --color-4: #BFD1E5;
+    --color-5: #542344;
+}
+
+body {
+    font-family: 'Martel', serif;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+h1, h2, h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--color-5);
+    text-align: center;
+}
+
+.hero-home {
+    width: 100%;
+}
+
+img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* For hamburger menu */
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.25rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+/* End of stuff for hamburger menu */
+
+.weather {
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-4);
+    margin: 0 auto;
+}
+
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#newsletter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
