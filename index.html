@@ -18,11 +18,14 @@
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img class=portrait-image src="images/portrait.jpg" alt="Portrait of Samuel Rios-Lazo">
+        <img class=portrait-image src="images/portrait.webp" alt="Portrait of Samuel Rios-Lazo">
         <h1>Samuel<br>Rios-Lazo</h1>
     </header>
     <!--For hamburger menu-->
@@ -36,6 +39,16 @@
             target="_blank">Scripture</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="lesson06/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="lesson06/images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="lesson06/images/hero-large.webp" alt="Beautiful LDS Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>San Juan Puerto Rico Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -48,6 +61,8 @@
                 <li><a href="lesson03/chamber-site-plan.html">Site Plan for Chamber of Commerce</a></li>
                 <li><a href="https://codepen.io/Samuel-R-os-Lazo/pen/KKEQNYr">CodePen Pseudo Classes</a></li>
                 <li><a href="lesson05/bom.html">Book of Mormon DOM Activity</a></li>
+                <li><a href="lesson03/images/landscape.webp">Optimized Image</a></li>
+                <li><a href="lesson06/responsive-images.html">Responsive Images Activity</a></li>
             </ul>
         </section>
         <section class="card">

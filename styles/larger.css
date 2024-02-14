@@ -38,6 +38,18 @@
         grid-column: 1/3;
     }
 
+    .herolabel {
+        position: absolute;
+        top: 450px;
+        left: 250px;
+        background: radial-gradient(#fff, #ffffff);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        /* Buenas */
+    }
+
     .navigation a {
         display: block;
         flex: 1 1 100%;
@@ -47,6 +59,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-columns: auto auto;
+    }
+
+    .hero {
+        grid-column: 1/3;
     }
 
     main h2 {
