@@ -5,6 +5,10 @@
         display: none; /* hide hamburger button */
     }
 
+    .title {
+        width: 80%;
+    }
+
     .navigation {
         flex-direction: row;
         max-width: var(--max-width);

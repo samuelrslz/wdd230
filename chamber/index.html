@@ -22,8 +22,17 @@
 
 <body>
     <header>
-        <h1>Chamber of Commerce<br>Rexburg, Idaho</h1>
-        <img class="hero-home" src="images/home/hero-home.webp" alt="Idaho Fields Hero Image">
+        <div class="title">
+            <h1>Chamber of Commerce<br>Rexburg, Idaho</h1>
+            <img src="images/favicons/logo.webp" alt="">
+        </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/home/w06-hero-small.webp" media="(max-width: 640px)">
+                <source srcset="images/home/w06-hero-medium.webp" media="(max-width: 900px)">
+                <img src="images/home/w06-hero-large.webp" alt="Beautiful LDS Temple">
+            </picture>
+        </div>
         <button>Log in</button>
         <button>Join</button>
     </header>
@@ -146,9 +155,19 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
-        <section class="weather-section">
+        <section id="weather-section">
             <h2 class="home-fourth-h2">Weather</h2>
-            <div class="weather">Placeholder for the weather widget.</div>
+            <h3>Wind Chill Calculator</h3>
+            <p>Enter the temperature in F and Wind Speed in mph. To do the calculation the limits are (<=50°F and>
+                    3.0mph).</p>
+            <label for="temperature">Temperature: </label>
+            <input type="text" id="temperature" placeholder="46">
+            <br>
+            <label for="windSpeed">Wind Speed: </label>
+            <input type="text" id="windSpeed" placeholder="10">
+            <button id="windChill">Calculate Wind Chill</button>
+            <p>The Wind Chill is: </p>
+            <p id="windChillResult">Hola</p>
         </section>
     </main>
     <footer>
@@ -157,6 +176,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamgurger.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
