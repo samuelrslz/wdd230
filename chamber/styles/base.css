@@ -165,4 +165,11 @@ p {
     color: var(--color-7);
 }
 
+/* For discovery page */
+
+figure img {
+    width: 100%;
+    margin: 0 auto;
+}
+
 

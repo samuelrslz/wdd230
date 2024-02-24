@@ -25,5 +25,15 @@
         display: block;
         margin: 0 auto;
     }
-    
+
+    .discoverImages img:hover{
+        filter: grayscale(100%);
+        filter: gray;
+        -webkit-filter: grayscale(100%);
+        transition: 1s ease;
+    }
+
+    .discoverImages img {
+        transition: all 1s ease;
+    }
 }
