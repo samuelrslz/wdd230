@@ -42,6 +42,7 @@ main {
 }
 
 .wf1 input[type="text"],
+.wf1 input[type="password"],
 .wf1 input[type="email"],
 .wf1 select {
   background-color: var(--background);
