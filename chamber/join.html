@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Rios-Lazo">
+    <meta name="description"
+        content="The home page of the Rexburg Chamber of Commerce. The best way to be updated on activities, events, and different businesses in town.">
+    <title>Rexburg Chamber of Commerce Home Page</title>
+    <meta property="og:title" content="Rexburg Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1706603243964-847a75c9ac0d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://samuelrslz.github.io/wdd230/chamber">
+    <link rel="icon" href="images/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Chamber of Commerce<br>Rexburg, Idaho</h1>
+            <img src="images/favicons/logo.webp" alt="">
+        </div>
+        <div class="hero">
+            <picture>
+                <!-- <source srcset="images/home/w06-hero-small.webp" media="(max-width: 640px)">
+                <source srcset="images/home/w06-hero-medium.webp" media="(max-width: 900px)"> -->
+                <img src="images/home/hero-home.webp" alt="Beautiful LDS Temple">
+            </picture>
+        </div>
+        <button>Log in</button>
+        <button>Join</button>
+    </header>
+    <!-- For dark mode button -->
+    <button id="dark-mode" title="Dark mode button"> <img src="images/moon.png" alt="Dark Mode icon" width="50"
+            height="50"></button>
+    <!--For hamburger menu-->
+    <button id="menu" title="Hamburger button"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="#">Join</a>
+        <a href="#">Page4</a>
+        <a href="#">Page5</a>
+    </nav>
+    <main>
+        <h2 class="home-first-h2">Join Us!</h2>
+        <form method="get" action="thankyou.html" class="wf1">
+            <h3>Sign Up Information</h3>
+            <fieldset class="joinField">
+                <legend>Applicant Information</legend>
+                <label>First Name*<input id="fname" type="text" name="fname" required></label>
+                <label>Last Name* <input id="lname" type="text" name="lname" required></label>
+                <label>Title or Position* <input id="position" type="text" name="position" required pattern="[a-zA-Z\- ]{7,}"></label>
+                <label>Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label>Phone* <input id="phone" type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset class="joinField">
+                <legend>Business Information</legend>
+                <label>Business' Name* <input id="bname" type="text" name="bname" required></label>
+                <div>Membership Level</div>
+                <label for="npMember"><input id="npMember" type="radio" name="membership" value="nonProfit">Non Profit</label>
+                <label for="bronzeMember"><input id="bronzeMember" type="radio" name="membership" value="bronze">Bronze</label>
+                <label for="silverMember"><input id="silverMember" type="radio" name="membership" value="silver">Silver</label>
+                <label for="goldMember"><input id="goldMember" type="radio" name="membership" value="gold">Gold</label>
+                <div>Business Description</div>
+                <label for="businessDescription">
+                    <textarea name="businessDescription" id="businessDescription" cols="38" rows="8"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber!" class="submitBtn">
+            
+
+            <section class="membershipDetails">
+                <h4>Rexburg Chamber of Commerce Memberships</h1>
+
+                <!-- NP Membership -->
+                <div class="membership">
+                    <h4>1. NP Membership (Non-Profit):</h2>
+                    <p>Support the community without breaking the bank! This membership is tailored for non-profit organizations dedicated to making a positive impact in Rexburg, Idaho.</p>
+                    <p><strong>Price:</strong> Free</p>
+                    <div class="benefits">
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>Inclusion in community events and collaborations.</li>
+                            <li>Listing on the Chamber's website with a brief description.</li>
+                            <li>Access to educational resources and networking opportunities.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bronze Membership -->
+                <div class="membership">
+                    <h4>2. Bronze Membership:</h2>
+                    <p>Lay the foundation for success with our Bronze Membership. Ideal for startups and small businesses looking to establish a presence in Rexburg.</p>
+                    <p><strong>Price:</strong> $250 per year</p>
+                    <div class="benefits">
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>All NP Membership benefits.</li>
+                            <li>Exclusive access to chamber networking events.</li>
+                            <li>Quarterly workshops on business essentials.</li>
+                            <li>Basic advertising opportunities on the Chamber's website.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Silver Membership -->
+                <div class="membership">
+                    <h4>3. Silver Membership:</h2>
+                    <p>Elevate your business with the enhanced benefits of a Silver Membership. Perfect for businesses ready to expand their reach and influence in Rexburg.</p>
+                    <p><strong>Price:</strong> $500 per year</p>
+                    <div class="benefits">
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>All Bronze Membership benefits.</li>
+                            <li>Priority placement in the chamber's directory.</li>
+                            <li>Bi-monthly advanced training sessions.</li>
+                            <li>Featured spotlights on the home page.</li>
+                            <li>Discounts on chamber-sponsored events.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gold Membership -->
+                <div class="membership">
+                    <h4>4. Gold Membership:</h2>
+                    <p>Experience the ultimate level of support and exposure with our Gold Membership. Tailored for established businesses seeking maximum visibility and engagement in Rexburg.</p>
+                    <p><strong>Price:</strong> $1,000 per year</p>
+                    <div class="benefits">
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>All Silver Membership benefits.</li>
+                            <li>VIP access to exclusive events and roundtable discussions.</li>
+                            <li>Monthly masterclass sessions with industry experts.</li>
+                            <li>Premium advertising positions on the home page.</li>
+                            <li>Significant discounts on all chamber events and sponsorships.</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightDate">[DATE]</span> | Samuel Rios-Lazo | El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamgurger.js"></script>
+</body>
+
+</html>

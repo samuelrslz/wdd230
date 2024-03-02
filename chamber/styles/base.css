@@ -1,175 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel&family=Work+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martel&family=Work+Sans:wght@500&display=swap");
 
 :root {
-    --color-1: #808080;
-    --color-2: #D8BFAA;
-    --color-3: #EBF5EE;
-    --color-4: #BFD1E5;
-    --color-5: #542344;
+  --color-1: #808080;
+  --color-2: #d8bfaa;
+  --color-3: #ebf5ee;
+  --color-4: #bfd1e5;
+  --color-5: #542344;
 
-    --color-6: white;
-    --color-7: black;
+  --color-6: white;
+  --color-7: black;
 }
 
 :root .darkMode {
-    --color-1: #404040;   /* Darker gray */
-    --color-2: #9C7E6E;   /* Darker brown */
-    --color-3: #39463D;   /* Darker greenish-gray */
-    --color-4: #5A6E82;   /* Darker blue-gray */
-    --color-5: #ebbad9;   /* Darker burgundy */
+  --color-1: #404040; /* Darker gray */
+  --color-2: #9c7e6e; /* Darker brown */
+  --color-3: #39463d; /* Darker greenish-gray */
+  --color-4: #5a6e82; /* Darker blue-gray */
+  --color-5: #ebbad9; /* Darker burgundy */
 
-    --color-6: rgb(26, 26, 26);
-    --color-7: rgb(214, 214, 214);
+  --color-6: rgb(26, 26, 26);
+  --color-7: rgb(214, 214, 214);
 }
 
 body {
-    font-family: 'Martel', serif;
-    margin: 0 auto;
-    max-width: 1300px;
-    background-color: var(--color-3);
+  font-family: "Martel", serif;
+  margin: 0 auto;
+  max-width: 1300px;
+  background-color: var(--color-3);
 }
 
 main {
-    background-color: var(--color-6);
+  background-color: var(--color-6);
 }
 
 .title {
-    margin: 0 auto;
-    width: 70%;
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: auto 100px;
-    align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: auto 100px;
+  align-items: center;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Work Sans', sans-serif;
-    color: var(--color-5);
-    text-align: center;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Work Sans", sans-serif;
+  color: var(--color-5);
+  text-align: center;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h4 {
-    margin-top: -20px;
+  margin-top: -20px;
 }
 
 .hero-home {
-    width: 100%;
+  width: 100%;
 }
 
 .hero img {
-    width: 100%;
+  width: 100%;
 }
 
 img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* For hamburger menu */
 #menu {
-    font-size: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 0.25rem 0.75rem;
-    background-color: #eee;
-    color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0.25rem 0.75rem;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 #menu::before {
-	content: "☰";
+  content: "☰";
 }
 
 #menu.open::before {
-	content: "❎";
+  content: "❎";
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
 }
 
 .navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+  display: block;
 }
 
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+.active::before {
+  content: "📍"; /* just a wayfinding symbol for the user */
 }
 
 /* End of stuff for hamburger menu */
 
-
 .whenDark {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 /* For dark mode button */
 #dark-mode {
-    font-size: 1.5rem;
-    border: none;
-    padding: 0.25rem 0.75rem;
-    background: none;
-    color: #000;
-    position: absolute;
-    top: 4rem;
-    right: 0.2rem;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 4rem;
+  right: 0.2rem;
 }
 
 /* End of stuff for dark-mode menu */
 
 .weather {
-    width: 400px;
-    height: 400px;
-    background-color: var(--color-4);
-    margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background-color: var(--color-4);
+  margin: 0 auto;
 }
 
 p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: var(--color-7);
-    line-height: 1.6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--color-7);
+  line-height: 1.6;
 }
 
-#newsletter, #weather-section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: var(--color-7);
+#newsletter,
+#weather-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--color-7);
 }
 
 /* For discovery page */
 
 figure img {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
+/* ------  FORM Form ------ */
 
+.wf1 {
+  display: block;
+  grid-template-columns: auto auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wf1 fieldset {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 2%;
+}
+
+.wf1 legend {
+  color: var(--color-5);
+  padding: 0 0.5rem;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-7);
+  font-size: 0.9rem;
+}
+
+.wf1 div {
+  padding-top: 1rem;
+  color: var(--color-5);
+  font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 input[type="number"],
+.wf1 select {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #555;
+  width: 90%;
+  max-width: 300px;
+  appearance: none;
+}
+
+.wf1 input[type="radio"] {
+  margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+  border: none;
+  background-color: var(--color-5);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 300px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input[type="submit"]:hover {
+  background-color: var(--color-1);
+}
+
+.membershipDetails {
+  width: 100%;
+  max-width: 400px;
+}
+
+.membershipDetails h4 {
+  text-align: left;
+}
+
+.benefits {
+  margin-top: -30px;
+}
+
+/* ------  FORM Form END ------ */
