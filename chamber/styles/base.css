@@ -97,6 +97,25 @@ img {
   content: "❎";
 }
 
+.login,
+.join {
+  position: relative;
+  top: -100px;
+  left: 30px;
+  width: 100px;
+  height: 50px;
+  background-color: #542344;
+  color: var(--color-6);
+  margin-right: 20px;
+  border: none;
+}
+
+.login:hover,
+.join:hover {
+  color: var(--color-7);
+  background-color: var(--color-6);
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
