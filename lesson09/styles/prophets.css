@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+
+:root {
+  --color-1: #808080;
+  --color-2: #d8bfaa;
+  --color-3: #ebf5ee;
+  --color-4: #bfd1e5;
+  --color-5: #542344;
+
+  --color-6: white;
+  --color-7: black;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-family: "Zeyada", cursive;
+  font-size: 3rem;
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+body {
+  color: white;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  row-gap: 10px;
+}
+
+img {
+  margin: 0 auto;
+  filter: drop-shadow(15px 10px 4px #461333);
+}
+
+section {
+  background-color: var(--color-5);
+  padding-bottom: 2rem;
+  width: 90%;
+  height: 95%;
+  text-align: center;
+  border: #808080;
+}
