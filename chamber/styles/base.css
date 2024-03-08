@@ -288,6 +288,8 @@ figure img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   row-gap: 10px;
+  margin: 0 auto;
+  width: 96%;
 }
 
 #cards img {
@@ -300,4 +302,5 @@ figure img {
   width: 90%;
   height: 90%;
   text-align: center;
+  background-color: var(--color-3);
 }
