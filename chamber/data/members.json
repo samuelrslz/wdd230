@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Millhollow Restaurant",
+      "address": "48 S 1st E Rexburg, ID 83440",
+      "phone": "(208) 356-0847",
+      "website": "https://www.millhollowrestaurant.com/",
+      "image": "tbd",
+      "membership": "Silver",
+      "yearOpened": 1990
+    },
+    {
+      "name": "Johny & Mahana's Cows",
+      "address": "125 E 2nd S Rexburg, ID 83440",
+      "phone": "(208) 247-1847",
+      "website": "https://www.mahanayouugly.com/",
+      "image": "tbd",
+      "membership": "Bronze",
+      "yearOpened": 1927
+    },
+    {
+      "name": "Better Call Saul",
+      "address": "9800 Montgomery Boulevard, Rexburg, ID 83440",
+      "phone": "(505) 842-5662",
+      "website": "http://bettercallsaul.amc.com/",
+      "image": "tbd",
+      "membership": "Gold",
+      "yearOpened": 2006
+    },
+    {
+      "name": "Soda Vine",
+      "address": "27 Soda Street Rexburg, ID 83440",
+      "phone": "(208) 323-1857",
+      "website": "https://fixxologydrinks.com//",
+      "image": "tbd",
+      "membership": "Bronze",
+      "yearOpened": 2023
+    },
+    {
+      "name": "Sapien Designs",
+      "address": "56 College Avenue Rexburg, ID 83440",
+      "phone": "(208) 123-1234",
+      "website": "https://sapiendesigns.com//",
+      "image": "tbd",
+      "membership": "Silver",
+      "yearOpened": 1800
+    },
+    {
+      "name": "Kiwi Loco",
+      "address": "27 Main Street Rexburg, ID 83440",
+      "phone": "(208) 123-4567",
+      "website": "https://www.kiwilocoyogurt.com//",
+      "image": "tbd",
+      "membership": "Bronze",
+      "yearOpened": 2012
+    },
+    {
+      "name": "G's Dairy Delights",
+      "address": "18 Saratoga Drive Rexburg, ID 83440",
+      "phone": "(208) 321-4321",
+      "website": "https://www.rexburgonline.com/local-business/gs-dairy-delights/",
+      "image": "tbd",
+      "membership": "Silver",
+      "yearOpened": 1987
+    }
+  ]
+}

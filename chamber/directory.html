@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Rios-Lazo">
+    <meta name="description"
+        content="The home page of the Rexburg Chamber of Commerce. The best way to be updated on activities, events, and different businesses in town.">
+    <title>Rexburg Chamber of Commerce Home Page</title>
+    <meta property="og:title" content="Rexburg Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1706603243964-847a75c9ac0d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://samuelrslz.github.io/wdd230/chamber">
+    <link rel="icon" href="images/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Chamber of Commerce<br>Rexburg, Idaho</h1>
+            <img src="images/favicons/logo.webp" alt="">
+        </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/home/w06-hero-small.webp" media="(max-width: 640px)">
+                <source srcset="images/home/w06-hero-medium.webp" media="(max-width: 900px)">
+                <img src="images/home/w06-hero-large.webp" alt="Beautiful people in a meeting">
+            </picture>
+            <button class="login">Log in</button>
+            <button class="join">Join</button>
+        </div>
+    </header>
+    <!-- For dark mode button -->
+    <button id="dark-mode" title="Dark mode button"> <img src="images/moon.png" alt="Dark Mode icon" width="50"
+            height="50"></button>
+    <!--For hamburger menu-->
+    <button id="menu" title="Hamburger button"></button>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
+        <a href="#">Page4</a>
+        <a href="#">Page5</a>
+    </nav>
+    <main id="directoryMain">
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightDate">[DATE]</span> | Samuel Rios-Lazo | El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamgurger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
