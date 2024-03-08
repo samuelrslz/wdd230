@@ -284,7 +284,27 @@ figure img {
 
 /* ----- For Directory ------- */
 
-#cards {
+.menu {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.menu button {
+  width: 100px;
+  height: 50px;
+  background-color: #542344;
+  color: var(--color-6);
+  margin-right: 20px;
+  border: none;
+  margin-top: 10px;
+}
+
+.menu button:hover {
+  color: var(--color-7);
+  background-color: var(--color-6);
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   row-gap: 20px;
@@ -293,17 +313,47 @@ figure img {
   padding-bottom: 20px;
 }
 
-#cards img {
+.grid img {
   margin: 0 auto;
   height: 200px;
   width: auto;
 }
 
-#cards section {
+.grid section {
   width: 90%;
   height: 100%;
   padding-bottom: 0px;
   margin-bottom: 20px;
   text-align: center;
   background-color: var(--color-3);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0.55rem;
+  align-items: center;
+}
+
+.list h3 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.list p {
+  text-align: left;
+}
+
+.list section img {
+  display: none;
+}
+
+.list section:nth-child(even) {
+  background-color: var(--color-4);
 }
