@@ -281,3 +281,23 @@ figure img {
 }
 
 /* ------  FORM Form END ------ */
+
+/* ----- For Directory ------- */
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  row-gap: 10px;
+}
+
+#cards img {
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+
+#cards section {
+  width: 90%;
+  height: 90%;
+  text-align: center;
+}

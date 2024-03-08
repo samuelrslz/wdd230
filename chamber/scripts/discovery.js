@@ -23,6 +23,7 @@ const displayCompanies = (companies) => {
     companyName.textContent = company.name;
     address.textContent = company.address;
     phone.textContent = company.phone;
+    companyURL.setAttribute("href", company.website);
     companyURL.textContent = company.website;
 
     companyImg.setAttribute("src", company.image);
