@@ -292,8 +292,8 @@ figure img {
 
 #cards img {
   margin: 0 auto;
-  width: 90%;
-  height: 90%;
+  height: 200px;
+  width: auto;
 }
 
 #cards section {
