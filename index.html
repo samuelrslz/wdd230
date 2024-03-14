@@ -71,8 +71,24 @@
             </ul>
         </section>
         <section class="card">
-            <h3>Information</h3>
-            <p>[WEATHER, NUMBER OF VISITS, AND OTHER THINGS WILL GO HERE</p>
+            <h3>Weather</h3>
+            <p>The weather in San Miguel, El Salvador</p>
+            <figure id="weather-figure">
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <section id="weather-grid">
+                <section>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                </section>
+                <section>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                    <p>Feels like <span id="feels-like2"></span></p></section>
+            </section>
+            
         </section>
         <iframe class="map" title="Google Map showing San Miguel, El Salvador"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13005.547769287768!2d-88.18018347431418!3d13.474319306140913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b2a70bc830dab%3A0x76ac9c406eec5592!2sSan%20Miguel%2C%20El%20Salvador!5e0!3m2!1ses-419!2sus!4v1706219275411!5m2!1ses-419!2sus"
@@ -88,6 +104,7 @@
     <script src="scripts/hamgurger.js"></script>
     <script src="scripts/numVisits.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

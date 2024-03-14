@@ -158,9 +158,8 @@ main h2 {
 }
 
 .card {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  align-items: center;
+  background-color: var(--tan);
+  border: 2px solid var(--lion);
 }
 
 .card h3 {
@@ -171,11 +170,13 @@ main h2 {
 }
 
 .card p {
-  text-align: center;
+  text-align: left;
+  margin-left: 2rem;
 }
 
 ul {
   list-style-type: square;
+  margin-left: 2rem;
 }
 
 footer {
@@ -186,4 +187,34 @@ footer {
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   border: 3px solid black;
+}
+
+/* Weather */
+
+img#weather-icon {
+  width: 60px;
+}
+
+#weather-figure {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+#weather-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.uno,
+.dos {
+  text-align: right;
+}
+
+.uno {
+  grid-column: 1/2;
+}
+
+.dos {
+  grid-column: 2/3;
 }
