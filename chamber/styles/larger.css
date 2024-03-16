@@ -111,4 +111,8 @@
   .list section {
     grid-template-columns: 0.7fr 1fr 0.5fr 1fr;
   }
+
+  #bannerButton {
+    left: 100px;
+  }
 }

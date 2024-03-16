@@ -35,4 +35,12 @@
   .discoverImages img {
     transition: all 1s ease;
   }
+
+  #invitation-banner {
+    grid-column: 1/3;
+  }
+
+  #bannerButton {
+    left: 40px;
+  }
 }

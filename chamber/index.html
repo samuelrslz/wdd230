@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    
 </head>
 
 <body>
@@ -49,6 +50,10 @@
         <a href="#">Page5</a>
     </nav>
     <main id="homeMain">
+        <section id="invitation-banner">
+            <button id="bannerButton">Close</button>
+            <img src="images/home/invitation-banner.webp" alt="Invitation Banner">
+        </section>
         <h2 class="home-first-h2">Upcoming Events</h2>
         <img class="home-first-img" src="images/home/home-1.webp" alt="Man surfing">
         <section class="home-first-text">
@@ -143,7 +148,7 @@
                 moments that last a lifetime. Because when it comes to proposals, these cows moo-ve hearts like no
                 other. 🐄💍❤️</p>
         </section>
-        <section id="newsletter">
+        <!-- <section id="newsletter">
             <h2 class="home-third-h2">Newsletter Sign Up</h2>
             <form>
                 <label for="email">Email:</label>
@@ -154,11 +159,11 @@
                 <input type="text" id="business" name="business"><br><br>
                 <input type="submit" value="Submit">
             </form>
-        </section>
+        </section> -->
         <section id="weather-section">
-            <h2 class="home-fourth-h2">Weather</h2>
-            <h3>Wind Chill Calculator</h3>
-            <p>Enter the temperature in F and Wind Speed in mph. To do the calculation the limits are (<=50°F and>
+            <!-- <h2 class="home-fourth-h2">Weather</h2> -->
+            <h2>Wind Chill Calculator</h2>
+            <p>Enter the temperature in F and Wind Speed in mph. To do the calculation the limits are (&lt;=50°F and>
                     3.0mph).</p>
             <label for="temperature">Temperature: </label>
             <input type="text" id="temperature" placeholder="46">
@@ -169,6 +174,43 @@
             <p>The Wind Chill is: </p>
             <p id="windChillResult">Hola</p>
         </section>
+        <section id="forecast-section">
+            <h2>Rexburg Forecast</h2>
+            <section id="weather1">
+                <figure id="weather-figure">
+                    <img id="weather-icon" src="placeholder" alt="placeholder">
+                    <figcaption></figcaption>
+                </figure>
+                <section id="weather-p">
+                    <p>Current temperature: <span id="current-temp"></span></p>
+                    <p>Min. temperature: <span id="min-temp"></span></p>
+                    <p>Max. temperature: <span id="max-temp"></span></p>
+                </section>
+            </section>
+            <h3>Next 3 days</h3>
+            <section id="weather2">
+                <section>
+                    <p id="tomorrow"></p>
+                    <!-- <img id="tomorrow-icon" src="" alt=""> -->
+                    <p id="tomorrow-min"></p>
+                    <p id="tomorrow-max"></p>
+                </section>
+                <section>
+                    <p id="tomorrow1"></p>
+                    <!-- <img id="tomorrow1-icon" src="" alt=""> -->
+                    <p id="tomorrow1-min"></p>
+                    <p id="tomorrow1-max"></p>
+                </section>
+                <section>
+                    <p id="tomorrow2"></p>
+                    <!-- <img id="tomorrow2-icon" src="" alt=""> -->
+                    <p id="tomorrow2-min"></p>
+                    <p id="tomorrow2-max"></p>
+                </section>
+            </section>
+            
+            
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="copyrightDate">[DATE]</span> | Samuel Rios-Lazo | El Salvador</p>
@@ -177,6 +219,9 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamgurger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/threeDay.js"></script>
+    <script src="scripts/closebanner.js"></script>
 </body>
 
 </html>

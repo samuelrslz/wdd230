@@ -97,6 +97,10 @@ img {
   content: "❎";
 }
 
+.hide {
+  display: none;
+}
+
 .login,
 .join {
   position: relative;
@@ -112,6 +116,27 @@ img {
 
 .login:hover,
 .join:hover {
+  color: var(--color-7);
+  background-color: var(--color-6);
+}
+
+#bannerButton {
+  background-color: #542344;
+  color: var(--color-6);
+  border: none;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  top: 110px;
+  left: 10px;
+}
+
+#invitation-banner {
+  position: sticky;
+  top: -40px;
+}
+
+#bannerButton:hover {
   color: var(--color-7);
   background-color: var(--color-6);
 }
@@ -356,4 +381,27 @@ figure img {
 
 .list section:nth-child(even) {
   background-color: var(--color-4);
+}
+
+/* For Weather thingy */
+
+#weather1 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#weather2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#weather-icon {
+  width: 80%;
+  margin-top: -40px;
 }
