@@ -11,17 +11,6 @@
   --color-7: black;
 }
 
-:root .darkMode {
-  --color-1: #404040; /* Darker gray */
-  --color-2: #9c7e6e; /* Darker brown */
-  --color-3: #39463d; /* Darker greenish-gray */
-  --color-4: #5a6e82; /* Darker blue-gray */
-  --color-5: #ebbad9; /* Darker burgundy */
-
-  --color-6: rgb(26, 26, 26);
-  --color-7: rgb(214, 214, 214);
-}
-
 body {
   font-family: "Martel", serif;
   margin: 0 auto;
@@ -35,11 +24,18 @@ main {
 
 .title {
   margin: 0 auto;
-  width: 70%;
+  width: 300px;
   max-width: 500px;
   display: grid;
   grid-template-columns: auto 100px;
   align-items: center;
+  position: absolute;
+  left: 30%;
+  top: 2%;
+}
+
+.title img {
+  border-radius: 25px;
 }
 
 h1,
@@ -47,7 +43,7 @@ h2,
 h3,
 h4 {
   font-family: "Work Sans", sans-serif;
-  color: var(--color-5);
+  color: var(--color-1);
   text-align: center;
 }
 
@@ -106,10 +102,11 @@ img {
   position: relative;
   top: -100px;
   left: 30px;
-  width: 100px;
+  width: 160px;
   height: 50px;
   background-color: var(--color-2);
   color: var(--color-6);
+  font-size: 1.2rem;
   margin-right: 20px;
   border: none;
 }
@@ -120,32 +117,16 @@ img {
   background-color: var(--color-6);
 }
 
-#bannerButton {
-  background-color: var(--color-2);
-  color: var(--color-6);
-  border: none;
-  width: 100px;
-  height: 50px;
-  position: relative;
-  top: 110px;
-  left: 10px;
-}
-
 #invitation-banner {
   position: sticky;
   top: -40px;
-}
-
-#bannerButton:hover {
-  color: var(--color-7);
-  background-color: var(--color-6);
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
   list-style: none;
-  background-color: #333;
+  background-color: var(--color-2);
   color: #fff;
 }
 
@@ -156,8 +137,9 @@ img {
   text-decoration: none;
   color: #fff;
 }
+
 .navigation a:hover {
-  background-color: #bbb;
+  background-color: var(--color-6);
   color: #333;
   font-weight: 700;
 }
@@ -172,24 +154,6 @@ img {
 }
 
 /* End of stuff for hamburger menu */
-
-.whenDark {
-  filter: invert(1);
-}
-
-/* For dark mode button */
-#dark-mode {
-  font-size: 1.5rem;
-  border: none;
-  padding: 0.25rem 0.75rem;
-  background: none;
-  color: #000;
-  position: absolute;
-  top: 4rem;
-  right: 0.2rem;
-}
-
-/* End of stuff for dark-mode menu */
 
 .weather {
   width: 400px;
@@ -223,7 +187,6 @@ figure img {
 
 .wf1 {
   display: block;
-  grid-template-columns: auto auto;
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
@@ -237,7 +200,7 @@ figure img {
 }
 
 .wf1 legend {
-  color: var(--color-5);
+  color: var(--color-2);
   padding: 0 0.5rem;
 }
 
@@ -250,7 +213,7 @@ figure img {
 
 .wf1 div {
   padding-top: 1rem;
-  color: var(--color-5);
+  color: var(--color-2);
   font-size: 0.9rem;
 }
 
@@ -278,7 +241,7 @@ figure img {
 
 .wf1 input[type="submit"] {
   border: none;
-  background-color: var(--color-5);
+  background-color: var(--color-2);
   color: #fff;
   border-radius: 6px;
   padding: 0.8rem;
@@ -383,6 +346,17 @@ figure img {
   background-color: var(--color-4);
 }
 
+#keephealthy {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  align-items: center;
+  color: var(--color-2);
+}
+
+#orders {
+  color: var(--color-2);
+}
+
 /* For Weather thingy */
 
 #weather1 {
@@ -404,4 +378,49 @@ figcaption {
 #weather-icon {
   width: 80%;
   margin-top: -40px;
+}
+
+.orderDetails {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid var(--color-2);
+  margin: 0 auto;
+}
+
+.orderNutrition {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid var(--color-2);
+  margin: 1rem auto 1rem auto;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--color-1);
+}
+
+.orderMessage {
+  text-align: center;
+}
+
+.review {
+  width: 160px;
+  height: 50px;
+  background-color: var(--color-2);
+  color: var(--color-6);
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border: none;
+  display: block;
+}
+
+.review:hover {
+  color: var(--color-7);
+  background-color: var(--color-6);
+}
+
+.linkReview {
+  width: 160px;
+  display: block;
+  margin: 0 auto;
 }

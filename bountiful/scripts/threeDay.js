@@ -1,63 +1,91 @@
-// For the 3 day forecast
-
 const tomorrow = document.querySelector("#tomorrow");
 const tomorrow1 = document.querySelector("#tomorrow1");
 const tomorrow2 = document.querySelector("#tomorrow2");
-
-const tomorrowMin = document.querySelector("#tomorrow-min");
-const tomorrow1Min = document.querySelector("#tomorrow1-min");
-const tomorrow2Min = document.querySelector("#tomorrow2-min");
-
-const tomorrowMax = document.querySelector("#tomorrow-max");
-const tomorrow1Max = document.querySelector("#tomorrow1-max");
-const tomorrow2Max = document.querySelector("#tomorrow2-max");
 
 const tomorrowIcon = document.querySelector("#tomorrow-icon");
 const tomorrow1Icon = document.querySelector("#tomorrow1-icon");
 const tomorrow2Icon = document.querySelector("#tomorrow2-icon");
 
-const url2 =
-  "https://api.openweathermap.org/data/3.0/onecall?lat=43.81647420235465&lon=-111.7837867109621&appid=da4687af93942a06c1610c45b0fbb904&units=imperial&exclude=minutely,%20hourly,%20alerts";
+const tomorrowDesc = document.querySelector("#tomorrow-desc");
+const tomorrow1Desc = document.querySelector("#tomorrow1-desc");
+const tomorrow2Desc = document.querySelector("#tomorrow2-desc");
 
-async function apiFetch2() {
-  try {
-    const response2 = await fetch(url2);
-    if (response2.ok) {
-      const data2 = await response2.json();
-      console.log(data2);
-      displayResults2(data2); // uncomment when ready
-    } else {
-      throw Error(await response2.text());
-    }
-  } catch (error2) {
-    console.log(error2);
-  }
-}
+// Construct the API URL
+const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=33.127305&lon=-117.288057&appid=cbdf069e528baba3df60735c87618369&units=imperial&exclude=current,minutely,daily,alerts`;
 
-apiFetch2();
+// Make a GET request to the API
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((data) => {
+    // Log the entire response data
+    console.log(data);
 
-function displayResults2(data2) {
-  tomorrowMin.innerHTML = `${data2.daily[1].temp.min}&deg;F`;
-  tomorrow1Min.innerHTML = `${data2.daily[2].temp.min}&deg;F`;
-  tomorrow2Min.innerHTML = `${data2.daily[3].temp.min}&deg;F`;
+    // Extract hourly forecast data from the response
+    const hourlyForecast = data.list;
 
-  tomorrowMax.innerHTML = `${data2.daily[1].temp.max}&deg;F`;
-  tomorrow1Max.innerHTML = `${data2.daily[2].temp.max}&deg;F`;
-  tomorrow2Max.innerHTML = `${data2.daily[3].temp.max}&deg;F`;
+    // Filter the forecast data to only include 9 AM for the next 3 days
+    const nextThreeDaysForecast = hourlyForecast.filter((hour) => {
+      // Convert UNIX timestamp to milliseconds
+      const timestamp = hour.dt * 1000;
+      // Get the hour of the day
+      const hourOfDay = new Date(timestamp).getHours();
+      // Return true if the hour is 9 AM and it's within the next 3 days
+      console.log(hourOfDay);
+      return hourOfDay === 9;
+    });
+
+    // Use the filtered forecast data as needed
+    displayForecast(nextThreeDaysForecast);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+function displayForecast(data) {
+  console.log(data);
 
   let tomorrowDate = new Date(0);
   let tomorrow1Date = new Date(0);
   let tomorrow2Date = new Date(0);
 
-  tomorrowDate.setUTCSeconds(data2.daily[1].dt);
+  tomorrowDate.setUTCSeconds(data[0].dt);
   tomorrow.innerHTML = `${convertDay(tomorrowDate.getDay())}`;
 
-  tomorrow1Date.setUTCSeconds(data2.daily[2].dt);
+  tomorrow1Date.setUTCSeconds(data[1].dt);
   tomorrow1.innerHTML = `${convertDay(tomorrow1Date.getDay())}`;
 
-  tomorrow2Date.setUTCSeconds(data2.daily[3].dt);
+  tomorrow2Date.setUTCSeconds(data[2].dt);
   tomorrow2.innerHTML = `${convertDay(tomorrow2Date.getDay())}`;
+
+  tomorrowDesc.innerHTML = `${data[0].weather[0].description}`;
+  tomorrow1Desc.innerHTML = `${data[1].weather[0].description}`;
+  tomorrow2Desc.innerHTML = `${data[2].weather[0].description}`;
+
+  const tomorrowsrc = `https://openweathermap.org/img/w/${data[0].weather[0].icon}.png`;
+  const tomorrow1src = `https://openweathermap.org/img/w/${data[1].weather[0].icon}.png`;
+  const tomorrow2src = `https://openweathermap.org/img/w/${data[2].weather[0].icon}.png`;
+
+  tomorrowIcon.setAttribute("src", tomorrowsrc);
+  tomorrowIcon.setAttribute("alt", "Icon of description of the weather");
+
+  tomorrow1Icon.setAttribute("src", tomorrow1src);
+  tomorrow1Icon.setAttribute("alt", "Icon of description of the weather");
+
+  tomorrow2Icon.setAttribute("src", tomorrow2src);
+  tomorrow2Icon.setAttribute("alt", "Icon of description of the weather");
 }
+
+//   for (let i = 0; i < data2.list.length; i++) {
+//     if (data2.list[i].dt)
+//   }
+
+//   console.log(placeholderDate.getUTCHours());
+
+//   tomorrowIcon.innerHTML = `${data2.daily[1].temp.min}&deg;F`;
+//   tomorrow1Icon.innerHTML = `${data2.daily[2].temp.min}&deg;F`;
+//   tomorrow2Icon.innerHTML = `${data2.daily[3].temp.min}&deg;F`;
+
+// }
 
 function convertDay(dayNumber) {
   switch (dayNumber) {

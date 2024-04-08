@@ -1,23 +1,12 @@
 :root {
-  --color-1: #808080;
-  --color-2: #d8bfaa;
-  --color-3: #ebf5ee;
-  --color-4: #bfd1e5;
-  --color-5: #542344;
+  --color-1: #f49e22ff;
+  --color-2: #d0373cff;
+  --color-3: #87a878ff;
+  --color-4: #cae2bcff;
+  --color-5: #dbf9b8ff;
 
   --color-6: white;
   --color-7: black;
-}
-
-:root .darkMode {
-  --color-1: #404040; /* Darker gray */
-  --color-2: #9c7e6e; /* Darker brown */
-  --color-3: #39463d; /* Darker greenish-gray */
-  --color-4: #5a6e82; /* Darker blue-gray */
-  --color-5: #ebbad9; /* Darker burgundy */
-
-  --color-6: rgb(26, 26, 26);
-  --color-7: rgb(214, 214, 214);
 }
 
 @media (min-width: 900px) {
@@ -30,6 +19,11 @@
     flex-direction: row;
     max-width: var(--max-width);
     border: 3px solid black;
+  }
+
+  #weather2,
+  #forecast3days {
+    grid-column: 2/3;
   }
 
   .navigation a {
@@ -87,10 +81,10 @@
   /* ------  FORM Form ------ */
 
   .wf1 {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr 1fr auto;
-    max-width: 1000px;
+    max-width: 600px;
     gap: 30px;
   }
 
