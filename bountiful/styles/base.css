@@ -18,6 +18,11 @@ body {
   background-color: var(--color-3);
 }
 
+.navigation a.active {
+  background-color: var(--color-6); 
+  color: #333; 
+}
+
 main {
   background-color: var(--color-6);
 }
@@ -138,11 +143,6 @@ img {
   text-decoration: none;
 }
 
-#invitation-banner {
-  position: sticky;
-  top: -40px;
-}
-
 .navigation {
   display: flex;
   flex-direction: column;
@@ -170,9 +170,6 @@ img {
   display: block;
 }
 
-.active::before {
-  content: "📍"; /* just a wayfinding symbol for the user */
-}
 
 /* End of stuff for hamburger menu */
 
