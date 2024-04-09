@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Samuel Rios-Lazo">
     <meta name="description"
-        content="The home page of the Rexburg Chamber of Commerce. The best way to be updated on activities, events, and different businesses in town.">
-    <title>Rexburg Chamber of Commerce Home Page</title>
-    <meta property="og:title" content="Rexburg Chamber of Commerce">
+        content="Discover a world of delicious and nutritious foods with Bountiful Foods. From fresh produce to gourmet delights, we offer a wide range of products to satisfy every palate. Explore our selection of organic fruits, vegetables, artisanal cheeses, and more. Shop now for quality ingredients to elevate your culinary experience.">
+    <title>Bountiful Foods Order Confirmation Page</title>
+    <meta property="og:title" content="Bountiful Foods">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://images.unsplash.com/photo-1706603243964-847a75c9ac0d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <meta property="og:url" content="https://samuelrslz.github.io/wdd230/chamber">
-    <link rel="icon" href="images/favicons/favicon-32x32.png">
+    <meta property="og:url" content="https://samuelrslz.github.io/wdd230/bountiful">
+    <link rel="icon" href="images/favicons/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -28,14 +28,11 @@
         </div>
         <div class="hero">
             <picture>
-                <!-- <source srcset="images/home/w06-hero-small.webp" media="(max-width: 640px)">
-                <source srcset="images/home/w06-hero-medium.webp" media="(max-width: 900px)"> -->
-                <img src="images/home/hero-home.webp" alt="Beautiful people in a meeting">
+                <img src="images/home/hero-home.webp" alt="Excellent picture of multiple foods">
             </picture>
-            <a href="order.html"><button class="join">Get My Drink</button></a>
+            <a href="order.html" class="join">Get My Drink</a>
         </div>
     </header>
-    <!-- For dark mode button -->
     <!--For hamburger menu-->
     <button id="menu" title="Hamburger button"></button>
     <nav class="navigation">
@@ -46,6 +43,7 @@
     <main>
         <h3>Thank you for your order!</h3>
         <p class="orderMessage">Your order will be ready for pick up in 15 minutes</p>
+        <h3>Order Confirmation</h3>
         <section class="orderDetails">
             <p><span class="bold">Name:</span> <span id="yourname"></span></p>
             <p><span class="bold">Email:</span> <span id="youremail"></span></p>
@@ -65,16 +63,31 @@
         </section>
         <p class="orderMessage">Any problem?<br>Contact us at 123-4567</p>
         <p class="orderMessage">Do you like the process?</p>
-        <a href="facebook.com" class="linkReview"><button class="review">Leave a Review</button></a>
+        <a href="https://www.facebook.com/" class="linkReview">Leave a Review on our Social Media</a>
     </main>
     <footer>
-        <p>&copy; <span id="copyrightDate">[DATE]</span> | Samuel Rios-Lazo | El Salvador</p>
-        <p id="lastModified"></p>
+        <section>
+            <p>&copy; <span id="copyrightDate">[DATE]</span> | Bountiful Foods</p>
+            <p id="lastModified"></p>
+        </section>
+        <section>
+            <p>Special thanks to:</p>
+            <ul>
+                <li><a href="https://www.fruityvice.com/">fruityvice.com</a></li>
+                <li><a href="https://openweathermap.org/">openweather.com</a></li>
+            </ul>
+        </section>
+        <section id="social">
+            <a href="https://www.facebook.com/" target=”_blank”><img src="images/footer/facebook.png" alt="facebook social media"></a>
+            <a href="https://www.instagram.com/" target=”_blank”><img src="images/footer/instagram.webp" alt="instagram social media"></a>
+            <a href="https://twitter.com/" target=”_blank”><img src="images/footer/x.png" alt="X social media"></a>
+        </section>
+        
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamgurger.js"></script>
-    <script src="scripts/count.js"></script>
     <script src="scripts/thankyou.js"></script>
+    <script src="scripts/count.js"></script>
 </body>
 
 </html>
