@@ -11,7 +11,7 @@ const tomorrow1Desc = document.querySelector("#tomorrow1-desc");
 const tomorrow2Desc = document.querySelector("#tomorrow2-desc");
 
 // Construct the API URL
-const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=33.127305&lon=-117.288057&appid=cbdf069e528baba3df60735c87618369&units=imperial&exclude=current,minutely,daily,alerts`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=33.127305&lon=-117.288057&appid=cbdf069e528baba3df60735c87618369&units=imperial&exclude=current,minutely,daily,alerts`;
 
 // Make a GET request to the API
 fetch(apiUrl)
